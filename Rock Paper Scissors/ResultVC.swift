@@ -47,4 +47,8 @@ class ResultVC: UIViewController {
             return "You win!"
         }
     }
+    
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
 }
