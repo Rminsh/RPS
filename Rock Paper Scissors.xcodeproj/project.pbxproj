@@ -8,23 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		C6F7C47621119A89007E283F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F7C47521119A89007E283F /* AppDelegate.swift */; };
-		C6F7C47821119A89007E283F /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F7C47721119A89007E283F /* MainVC.swift */; };
+		C6F7C47821119A89007E283F /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F7C47721119A89007E283F /* GameVC.swift */; };
 		C6F7C47B21119A89007E283F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6F7C47921119A89007E283F /* Main.storyboard */; };
 		C6F7C47D21119A8A007E283F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6F7C47C21119A8A007E283F /* Assets.xcassets */; };
 		C6F7C48021119A8A007E283F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6F7C47E21119A8A007E283F /* LaunchScreen.storyboard */; };
-		C6F7C48821119FE0007E283F /* ResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F7C48721119FE0007E283F /* ResultVC.swift */; };
 		C6F7C48A2111BD50007E283F /* Sign.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F7C4892111BD50007E283F /* Sign.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C6F7C47221119A89007E283F /* Rock Paper Scissors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rock Paper Scissors.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6F7C47521119A89007E283F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C6F7C47721119A89007E283F /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		C6F7C47721119A89007E283F /* GameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
 		C6F7C47A21119A89007E283F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C6F7C47C21119A8A007E283F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6F7C47F21119A8A007E283F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C6F7C48121119A8A007E283F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C6F7C48721119FE0007E283F /* ResultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultVC.swift; sourceTree = "<group>"; };
 		C6F7C4892111BD50007E283F /* Sign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sign.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,8 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				C6F7C47521119A89007E283F /* AppDelegate.swift */,
-				C6F7C47721119A89007E283F /* MainVC.swift */,
-				C6F7C48721119FE0007E283F /* ResultVC.swift */,
+				C6F7C47721119A89007E283F /* GameVC.swift */,
 				C6F7C4892111BD50007E283F /* Sign.swift */,
 				C6F7C47921119A89007E283F /* Main.storyboard */,
 				C6F7C47C21119A8A007E283F /* Assets.xcassets */,
@@ -141,8 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6F7C47821119A89007E283F /* MainVC.swift in Sources */,
-				C6F7C48821119FE0007E283F /* ResultVC.swift in Sources */,
+				C6F7C47821119A89007E283F /* GameVC.swift in Sources */,
 				C6F7C48A2111BD50007E283F /* Sign.swift in Sources */,
 				C6F7C47621119A89007E283F /* AppDelegate.swift in Sources */,
 			);

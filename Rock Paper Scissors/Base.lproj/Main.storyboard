@@ -4,16 +4,15 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--MainVC-->
+        <!--GameVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="Rock_Paper_Scissors" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="GameVC" customModule="Rock_Paper_Scissors" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -31,6 +30,12 @@
                                         <rect key="frame" x="39" y="106" width="233.5" height="27.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <color key="textColor" white="0.17060004340277779" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🤖" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="suN-ed-Yov">
+                                        <rect key="frame" x="117" y="143.5" width="77" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="72"/>
+                                        <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="uOP-FS-Dcx">
@@ -71,7 +76,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.99607843137254903" green="0.80392156862745101" blue="0.24754901960784315" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.99607843137254903" green="0.80392156862745101" blue="0.24705882352941178" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Zp6-SB-bCZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qIY-Iq-YgE"/>
                             <constraint firstItem="Zp6-SB-bCZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tmF-uy-1RV"/>
@@ -79,75 +84,17 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <segue destination="Kvm-JE-bds" kind="show" identifier="showResult" id="HE9-rn-Qym"/>
+                        <outlet property="botChoice" destination="tum-WF-C3H" id="XM6-8M-KsX"/>
+                        <outlet property="paperBtn" destination="G7f-yk-YJR" id="StF-z9-EfR"/>
+                        <outlet property="rockBtn" destination="RrO-8h-XBX" id="g6n-6f-xwm"/>
+                        <outlet property="scissorsBtn" destination="aA2-vf-yDI" id="ea2-Gq-3Bz"/>
+                        <outlet property="statusLabel" destination="PHj-cf-o2d" id="qpz-3c-fZd"/>
+                        <outlet property="userChoice" destination="suN-ed-Yov" id="Z9y-Ge-ahi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="132" y="117"/>
         </scene>
-        <!--ResultVC-->
-        <scene sceneID="NUN-AM-rtd">
-            <objects>
-                <viewController storyboardIdentifier="ResultVC" id="Kvm-JE-bds" customClass="ResultVC" customModule="Rock_Paper_Scissors" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="9gi-ca-q6h">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="S9m-CR-ahy">
-                                <rect key="frame" x="115.5" y="180.5" width="145" height="307.5"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="✌🏻" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bwE-DQ-hJJ">
-                                        <rect key="frame" x="34" y="0.0" width="77" height="86"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="72"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Won!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f32-Pc-SiM">
-                                        <rect key="frame" x="22" y="106" width="101.5" height="27.5"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👊🏻" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Bv-He-yLM">
-                                        <rect key="frame" x="34" y="153.5" width="77" height="86"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="72"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQi-Ht-9Dy">
-                                        <rect key="frame" x="0.0" y="259.5" width="145" height="48"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                        <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
-                                        <state key="normal" title="Play Again" backgroundImage="enabled">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="playAgainPressed:" destination="Kvm-JE-bds" eventType="touchUpInside" id="kpX-tE-jt8"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                        </subviews>
-                        <color key="backgroundColor" red="0.63137254901960782" green="0.82745098039215681" blue="0.43137254901960786" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="S9m-CR-ahy" firstAttribute="centerX" secondItem="9gi-ca-q6h" secondAttribute="centerX" id="SEj-Fa-PfX"/>
-                            <constraint firstItem="S9m-CR-ahy" firstAttribute="centerY" secondItem="9gi-ca-q6h" secondAttribute="centerY" id="TYu-ef-baj"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="BWL-FW-srI"/>
-                    </view>
-                    <connections>
-                        <outlet property="challengeStatus" destination="f32-Pc-SiM" id="lN5-LF-SIc"/>
-                        <outlet property="computerChoiceLabel" destination="2Bv-He-yLM" id="qC3-he-66U"/>
-                        <outlet property="userChoiceLabel" destination="bwE-DQ-hJJ" id="Rkd-Cd-cpf"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7qm-dJ-5Km" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="996" y="118"/>
-        </scene>
     </scenes>
-    <resources>
-        <image name="enabled" width="13" height="13"/>
-    </resources>
 </document>
