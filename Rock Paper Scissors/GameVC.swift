@@ -66,22 +66,27 @@ class GameVC: UIViewController {
     
     func calculateResult(user: String , computer: String) -> String {
         if user == computer {
-            self.view.backgroundColor = #colorLiteral(red: 0.9960784314, green: 0.8039215686, blue: 0.2470588235, alpha: 1)
             return "Draw!"
         } else if (user == "👊🏻" && computer == "✋🏻") || (user == "✋🏻" && computer == "✌🏻") || (user == "✌🏻" && computer == "👊🏻") {
-            self.view.backgroundColor = #colorLiteral(red: 0.9058823529, green: 0.2980392157, blue: 0.2352941176, alpha: 1)
+            UIView.animate(withDuration: 0.3, animations: { () -> Void in
+                self.view.backgroundColor = #colorLiteral(red: 0.9058823529, green: 0.2980392157, blue: 0.2352941176, alpha: 1)
+            })
             self.statusLabel.textColor = .white
             return "You Lose"
         } else {
-            self.view.backgroundColor = #colorLiteral(red: 0.1529411765, green: 0.6823529412, blue: 0.3764705882, alpha: 1)
+            UIView.animate(withDuration: 0.3, animations: { () -> Void in
+                self.view.backgroundColor = #colorLiteral(red: 0.1529411765, green: 0.6823529412, blue: 0.3764705882, alpha: 1)
+            })
             self.statusLabel.textColor = .white
             return "You win!"
         }
     }
     
     func resetItems() {
-        self.view.backgroundColor = #colorLiteral(red: 0.9960784314, green: 0.8039215686, blue: 0.2470588235, alpha: 1)
-        self.statusLabel.textColor = #colorLiteral(red: 0.1706000417, green: 0.1706000417, blue: 0.1706000417, alpha: 1)
+        UIView.animate(withDuration: 0.3, animations: { () -> Void in
+            self.view.backgroundColor = #colorLiteral(red: 0.9960784314, green: 0.8039215686, blue: 0.2470588235, alpha: 1)
+            self.statusLabel.textColor = #colorLiteral(red: 0.1706000417, green: 0.1706000417, blue: 0.1706000417, alpha: 1)
+        })
         paperBtn.isHidden = false
         scissorsBtn.isHidden = false
         rockBtn.isHidden = false
