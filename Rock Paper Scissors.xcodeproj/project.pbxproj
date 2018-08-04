@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C6A12D012115B61E004A9A5E /* SaveKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A12D002115B61E004A9A5E /* SaveKeys.swift */; };
 		C6F7C47621119A89007E283F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F7C47521119A89007E283F /* AppDelegate.swift */; };
 		C6F7C47821119A89007E283F /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F7C47721119A89007E283F /* GameVC.swift */; };
 		C6F7C47B21119A89007E283F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6F7C47921119A89007E283F /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C6A12D002115B61E004A9A5E /* SaveKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveKeys.swift; sourceTree = "<group>"; };
 		C6F7C47221119A89007E283F /* Rock Paper Scissors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rock Paper Scissors.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6F7C47521119A89007E283F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6F7C47721119A89007E283F /* GameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				C6F7C47521119A89007E283F /* AppDelegate.swift */,
 				C6F7C47721119A89007E283F /* GameVC.swift */,
 				C6F7C4892111BD50007E283F /* Sign.swift */,
+				C6A12D002115B61E004A9A5E /* SaveKeys.swift */,
 				C6F7C47921119A89007E283F /* Main.storyboard */,
 				C6F7C47C21119A8A007E283F /* Assets.xcassets */,
 				C6F7C47E21119A8A007E283F /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6A12D012115B61E004A9A5E /* SaveKeys.swift in Sources */,
 				C6F7C47821119A89007E283F /* GameVC.swift in Sources */,
 				C6F7C48A2111BD50007E283F /* Sign.swift in Sources */,
 				C6F7C47621119A89007E283F /* AppDelegate.swift in Sources */,
