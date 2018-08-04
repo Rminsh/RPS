@@ -15,8 +15,7 @@
 
 ## Usage
 - Tap on one of the three signs: rock, paper, or scissors
-- See who won
-- Tap Play Again to play another game
+- See who won and get scores
 
 
 ## Build
