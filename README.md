@@ -6,7 +6,7 @@
 
 
 
-*Requires Xcode 9 or later.*
+*Requires Xcode 10.2.1 or later.*
 
 
 ## Screenshot
