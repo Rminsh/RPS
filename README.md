@@ -1,6 +1,6 @@
 # Rock Paper Scissors <img src="doc/icon.png" width="160" align="right">
 
-> Rock Paper Scissor game for ios , written with swift 4
+> Rock Paper Scissor game for ios , written with swift 5
 
 
 
